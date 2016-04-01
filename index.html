@@ -8,31 +8,22 @@
         <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
         <link rel="stylesheet" href="css/style.css" />
   </head>
-<!--  <body ng-app="khalil">
-<div ng-controller="itemsList">
 
-<div ng-repeat="item in items">
-  <p>aaa</p>
-
-
-</div>
-</div>
-  </body>-->
 
   <body id="top" ng-app="khalil">
   <div id="cv" class="instaFade" ng-controller="infocraft">
-
-  	<div class="mainDetails">
-  		<div id="headshot" class="quickFade">
+<div class="row">
+  	<div class="mainDetails" >
+  		<div id="headshot" class="quickFade col-md-1">
   			<img src="khaliltef.jpg" alt="khalil ait ammar" />
   		</div>
 
-  		<div id="name">
+  		<div id="name" class="col-md-4  ">
   			<h1 class="quickFade delayTwo">khalil ait ammar </h1>
   			<h2 class="quickFade delayThree">ingenieur informatique</h2>
   		</div>
 
-  		<div id="contactDetails" class="quickFade delayFour">
+  		<div id="contactDetails" class="quickFade delayFour col-md-3">
   			<ul>
   				<li>e: <a href="mailto:joe@bloggs.com" target="_blank">{{mail}}</a></li>
 
@@ -41,7 +32,7 @@
   		</div>
   		<div class="clear"></div>
   	</div>
-
+	</div>
   	<div id="mainArea" class="quickFade delayFive">
   		<section>
   			<article>
