@@ -7,67 +7,61 @@
     <link rel="stylesheet" href="css/style.css"/>
     <title></title>
 </head>
-<body>
+<body ng-app="khalil">
 
-<div class="container">
+<div class="container"  >
     <!--  bloc du haut : presentation , contact , photo   -->
-    <div class="row top" id="blocTop">
+    <div class="row top" id="blocTop" ng-controller="blochaut">
         <div class="col-md-3 ">
             <div class="avatar ">
                 <img class="img-thumbnail" src="khaliltef.jpg" alt="">
             </div>
         </div>
         <div class="col-md-6">
-            <h1>khalil ait ammar</h1>
+            <h1>Khalil ait ammar</h1>
             <h2>Ingénieur en informatique</h2>
             <br>
-            <h4>Ingénieur informatique, passionné par les technologies
-
-                du web apprécie le travail en équipe.
-
-                des compétences en leadership acquises tout au long
-
-                de plusieurs activités et responsabilités</h4>
+            <h4>{{pres}}</h4>
         </div>
 
-        <div class="col-md-3 ">
+        <div class="col-md-3">
             <div class="contact">
 
                 <div>
                     <img src="https://maxcdn.icons8.com/iOS7/PNG/32/Very_Basic/home-32.png" title="Home" width="32">
-                    <p> la Goulette 2060 tunis.</p>
+                    <p> {{address}}</p>
                 </div>
 
                 <div>
                     <img src="https://maxcdn.icons8.com/iOS7/PNG/32/Messaging/message_group-32.png"
                          title="Group Message" width="32">
-                    <p>Ait.ammar.khalil@gmail.com</p>
+                    <p>{{mail}}</p>
                 </div>
 
                 <div>
                     <img src="https://maxcdn.icons8.com/iOS7/PNG/32/Social_Networks/linkedin-32.png" title="LinkedIn"
                          width="32">
-                    <p>tn.linkedin.com/in/khalil2A</p>
+                    <p>{{linkedin}}</p>
                 </div>
 
                 <div>
                     <img src="https://maxcdn.icons8.com/iOS7/PNG/32/Mobile/shake_phone-32.png" title="Shake Phone"
                          width="32">
-                    <p>21 938 926</p>
+                    <p>{{num}}</p>
                 </div>
             </div>
         </div>
 
     </div>
     <!--  bloc du haut // fin   -->
-    <div>
+    <div ng-controller="blocmid">
         <div class="row mid" id="blocmid">
             <div class="col-md-6 blocExperiance">
                 <img src="https://maxcdn.icons8.com/iOS7/PNG/50/Ecommerce/for_experienced-50.png"
                      title="For Experienced"
                      width="50">
-                <h2>Expériences professionnelles</h2>
-                <h4>Développeur web chez segap pour le client (adveez)</h4><br>
+                <h2>{{titre}}</h2>
+                <h4>{{exp}}</h4><br>
                 <p>-) réalisation d'un rapport sur la compatibilité de l'application localeez sur les diffèrents
                     navigateurs.<br>
                     -) création d'un backoffice avec html5 , css3<br>
@@ -89,7 +83,7 @@
         <div class="row" id="blocmid">
             <div class="col-md-6 blocExperiance">
 
-                <h4>Développeur web chez segap pour le client (adveez)</h4><br>
+                <h4>{{exp2}})</h4><br>
                 <p>-) Elaboration d'une plateforme web pour la gestion des chargebacks <br>
                     (rétrofaction ) au sein du département informatique de l'ATB <br>
                     --) Partie serveur: C# asp net visual studio 2013 <br>
@@ -123,7 +117,7 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="app.js"></script>
 <!-- controller -->
-<script type="text/javascript" src="src/controllers/categoryCont.js"></script>
-
+<script type="text/javascript" src="src/controllers/cvController.js"></script>
+<script type="text/javascript" src="src/controllers/cvmidController.js"></script>
 
 </html>
