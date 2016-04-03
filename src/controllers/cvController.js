@@ -1,7 +1,7 @@
 'use strict'
 
 
-
+//controlleur pour le bloc de haut 
 app.controller('blochaut',function ($scope) {
   $scope.pres='Ingénieur informatique, passionné par les technologies du web apprécie le travail en équipe. des compétences en leadership acquises tout au long de plusieurs activités et responsabilités.';
   $scope.address=' la Goulette 2060 tunis.';

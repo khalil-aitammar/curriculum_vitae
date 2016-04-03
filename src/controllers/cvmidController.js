@@ -1,6 +1,6 @@
 'use strict'
 
-
+//controlleur pour le bloc de mid
 app.controller('blocmid',function ($scope) {
     $scope.titre='Expériences professionnelles';
     $scope.exp=' Developpeur web chez SEGAP client (ADVEEZ)';
